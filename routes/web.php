@@ -21,5 +21,4 @@ Route::group(['prefix' => '/'], function () {
 
     // Produksi print
     Route::get('produksis/{id}/print', ['uses' => 'ProduksisController@print', 'as' => 'voyager.produksis.print']);
-    
 });
