@@ -26,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //tombol print
-        Voyager::addAction(\App\Actions\MyAction::class);
+        Voyager::addAction(\App\Actions\ProduksisPrint::class);
+        Voyager::addAction(\App\Actions\ServicesPrint::class);
     }
 }

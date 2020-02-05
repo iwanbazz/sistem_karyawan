@@ -18,4 +18,8 @@
 
 Route::group(['prefix' => '/'], function () {
     Voyager::routes();
+
+    // Produksi print
+    Route::get('produksis/{id}/print', ['uses' => 'ProduksisController@print', 'as' => 'voyager.produksis.print']);
+    
 });

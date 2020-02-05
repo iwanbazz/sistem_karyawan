@@ -30,7 +30,7 @@ class ProduksisPrint extends AbstractAction
 
     public function getDefaultRoute()
     {
-        return route('voyager.produksis.index');
+        return route('voyager.produksis.print', array("id"=>$this->data->{$this->data->getKeyName()}));
     }
 
     public function shouldActionDisplayOnDataType()
