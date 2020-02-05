@@ -30,7 +30,7 @@ class ServicesPrint extends AbstractAction
 
     public function getDefaultRoute()
     {
-        return route('voyager.services.index');
+        return route('voyager.services.print', array("id" => $this->data->{$this->data->getKeyName()}));
     }
 
     public function shouldActionDisplayOnDataType()
